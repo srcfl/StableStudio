@@ -546,7 +546,7 @@ export const createPlugin = StableStudio.createPlugin<{
 
         title: "API key",
         description:
-          "You can find your Stability API key at https://dreamstudio.ai/account",
+          "Srcful will provide your API key",
 
         placeholder: "sk-...",
         required: true,
@@ -607,28 +607,10 @@ function parseExtras(extras: any): any | undefined {
 }
 
 const markdownDescription = `
-# Welcome to StableStudio!
+# Welcome to Srcful StableStudio!
 
-## [📖 README](https://github.com/Stability-AI/StableStudio) · [🎮 Discord](https://discord.com/channels/1002292111942635562/1108055793674227782) · [🌈 DreamStudio](https://dreamstudio.ai) · [💬 Discussion](https://github.com/Stability-AI/StableStudio/discussions)
 
-# Setup
-
-To get started, you'll need to sign up for a [DreamStudio](https://dreamstudio.ai) account.
-
-Once you're logged in, head to the [account page](https://dreamstudio.ai/account).
-
-You should see a section called \`API keys\`...
-![](/media/api_keys_screenshot.png)
-
-If you don't already have a key, you can create one via the plus button...
-![](/media/create_api_key_screenshot.png)
-
-You can copy your API key by clicking the copy button...
-![](/media/copy_api_key_screenshot.png)
-
-You'll be asked to accept the terms of service.
-
-Now, paste the key into the field below...
+Paste the API key into the field below...
 
 The plugin status should change to \`Ready\` once everything is working.
 ` as const;
