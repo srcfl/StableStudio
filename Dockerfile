@@ -2,7 +2,7 @@
 FROM node:lts-alpine3.18
 
 RUN apk add git
-RUN apk add --no-cache build-base python3
+#RUN apk add --no-cache build-base python3
 
 # Set the working directory in the container
 WORKDIR /app
@@ -22,4 +22,4 @@ RUN yarn
 
 
 # Start the server
-CMD ["yarn", "dev", "--host", "0.0.0.0"]
+CMD ["yarn", "start", "--host", "0.0.0.0"]
