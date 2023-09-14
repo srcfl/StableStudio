@@ -13,7 +13,7 @@
     "build:javascript": "tsx scripts/Build.ts",
     "build": "yarn build:types && yarn build:javascript",
     "dev": "nodemon --watch src --ext ts,tsx,json --exec \"yarn build\"",
-    "start": "yarn build"
+    "start": ""
   },
   "dependencies": {
     "@stability/stablestudio-plugin": "workspace:^"
