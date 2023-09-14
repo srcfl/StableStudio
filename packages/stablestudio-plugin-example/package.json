@@ -12,7 +12,8 @@
     "build:types": "ttsc --project tsconfig.json",
     "build:javascript": "tsx scripts/Build.ts",
     "build": "yarn build:types && yarn build:javascript",
-    "dev": "nodemon --watch src --ext ts,tsx,json --exec \"yarn build\""
+    "dev": "nodemon --watch src --ext ts,tsx,json --exec \"yarn build\"",
+    "start": "yarn build"
   },
   "dependencies": {
     "@stability/stablestudio-plugin": "workspace:^"

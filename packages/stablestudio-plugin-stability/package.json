@@ -13,7 +13,8 @@
     "build:types": "ttsc --project tsconfig.json",
     "build:javascript": "tsx scripts/Build.ts",
     "build": "yarn build:types && yarn build:javascript",
-    "dev": "nodemon --watch src --ext ts,json --exec \"yarn build\""
+    "dev": "nodemon --watch src --ext ts,json --exec \"yarn build\"",
+    "start": "yarn build"
   },
   "dependencies": {
     "@protobuf-ts/grpcweb-transport": "^2.8.2",
